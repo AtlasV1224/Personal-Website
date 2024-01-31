@@ -1,0 +1,7 @@
+ToDo:
+
+Add RSS feed compat
+Form a template for projects page
+Complete the other pages
+Add about details with links to GitHub and other project sites
+Checl over for accessibility i.e. screen reader
