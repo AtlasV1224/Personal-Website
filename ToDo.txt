@@ -5,3 +5,4 @@ Form a template for projects page
 Complete the other pages
 Add about details with links to GitHub and other project sites
 Checl over for accessibility i.e. screen reader
+Make seperate stylesheets for mobile, desktop, ultrawide resolution and switch according to the resolution
