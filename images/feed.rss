@@ -23,16 +23,5 @@
   			<category>Web Development</category>
   			<category>Programming</category>
 		</item>
-		<item>
-			<title>test</title>
-			<guid isPermaLink="true">https://atlasv.info/projects/index.html</guid>
-			<link>https://atlasv.info/projects/index.html</link>
-			<description>test card</description>
-			<dc:creator>"Atlas V"</dc:creator>
-			<pubDate>Thu, 15 Feb 2024 17:58:13 GMT</pubDate>
-			<category>Technology</category>
-  			<category>Web Development</category>
-  			<category>Programming</category>
-		</item>
 	</channel>
 </rss>
