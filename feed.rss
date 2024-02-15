@@ -6,11 +6,8 @@
 		<description>Projects made by Atlas V</description>
 		<language>en</language>
 		<image>
-			<url>https://atlasv.info/images/favicon.ico</url>
-			<title>Feed Logo</title>
-			<link>https://atlasv.info</link>
 			<url>https://atlasv.info/images/favicon.png</url>
-			<title>Feed Logo</title>
+			<title>Atlas V</title>
 			<link>https://atlasv.info</link>
 		</image>
 		<atom:link href="https://atlasv.info/projects" rel="self" type="application/rss+xml" />
@@ -20,7 +17,7 @@
 			<guid isPermaLink="true">https://atlasv.info/projects/personal-website</guid>
 			<link>https://atlasv.info/projects/personal-website</link>
 			<description>This website was my first experience with HTML and CSS, it has helped me define what I would like to do professionally.</description>
-			<dc:creator>Atlas V</dc:creator>
+			<dc:creator>"Atlas V"</dc:creator>
 			<pubDate>Thu, 15 Feb 2024 17:58:13 GMT</pubDate>
 			<category>Technology</category>
   			<category>Web Development</category>
