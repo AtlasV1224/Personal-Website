@@ -1,37 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0">
 	<channel>
 		<title>Atlas V</title>
-		<link><![CDATA[https://atlasv.info]]></link>
-		<description>Atlas V</description>
+		<link>https://atlasv.info/projects</link>
+		<description>Projects made by Atlas V</description>
 		<language>en</language>
-		<pubDate>Thu, 15 Feb 2024 15:58:14 +0000</pubDate>
-		<generator>MySitemapGenerator (www.mysitemapgenerator.com)</generator>
+		<image>
+			<url>https://atlasv.info/images/favicon.ico</url>
+			<title>Feed Logo</title>
+			<link>https://atlasv.info</link>
+			<url>https://atlasv.info/images/favicon.png</url>
+			<title>Feed Logo</title>
+			<link>https://atlasv.info</link>
+		</image>
 
 		<item>
-			<guid isPermaLink="false">385498818</guid>
-			<title>Atlas V</title>
-			<link>https://atlasv.info/education</link>
-			<dc:creator>Administrator</dc:creator>
-			<category>Site News</category>
-			<pubDate>Thu, 15 Feb 2024 17:58:13 +0200</pubDate>
-		</item>
-		<item>
-			<guid isPermaLink="false">163976957</guid>
-			<title>Atlas V</title>
-			<link>https://atlasv.info/contact</link>
-			<dc:creator>Administrator</dc:creator>
-			<category>Site News</category>
-			<pubDate>Thu, 15 Feb 2024 17:58:12 +0200</pubDate>
-		</item>
-		<item>
-			<guid isPermaLink="false">1530402340</guid>
-			<title>Atlas V</title>
-			<link>https://atlasv.info/about</link>
-			<dc:creator>Administrator</dc:creator>
-			<category>Site News</category>
-			<pubDate>Thu, 15 Feb 2024 17:58:11 +0200</pubDate>
+			<title>Personal Website</title>
+			<guid isPermaLink="true">https://atlasv.info/projects/personal-website</guid>
+			<link>https://atlasv.info/projects/personal-website</link>
+			<description>This website was my first experience with HTML and CSS, it has helped me define what I would like to do professionally.</description>
+			<dc:creator>Atlas V</dc:creator>
+			<pubDate>Thu, 15 Feb 2024 17:58:13 GMT</pubDate>
+			<category>Technology</category>
+  			<category>Web Development</category>
+  			<category>Programming</category>
 		</item>
 	</channel>
 </rss>
