@@ -206,20 +206,3 @@ a.featured-projects:hover {
     margin: 0.5em;
     margin-bottom: em;
 }
-
-.prototype-table-container {
-    margin: 10% 2%;
-    padding: 5% 5%;
-    background-color: #232323;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-table, th, td {
-    border: 1px solid #b9c0cb;
-    border-collapse: collapse;
-    color: #b9c0cb;
-    margin: auto;
-    padding: 8px;
-    text-align: left;
-}
