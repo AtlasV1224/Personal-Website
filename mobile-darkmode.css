@@ -137,7 +137,7 @@ a.header-title {
 }
 
 p.blurb-text {
-    color: #c0c0cb;
+    color: #cccccc;
     text-align: center;
     padding: 20;
 }
@@ -149,7 +149,7 @@ p.blurb-text {
 }
 
 a.featured-projects {
-    color: #b9c0cb;
+    color: #cccccc;
     text-align: center;
     font-size: 1.75em;
     margin-top: 3em;
@@ -202,7 +202,7 @@ a.featured-projects:hover {
 .card-description {
     font-size: 14px;
     overflow: hidden;
-    color: #b9c0cb;
+    color: #cccccc;
     margin: 0.5em;
     margin-bottom: em;
 }
@@ -216,9 +216,9 @@ a.featured-projects:hover {
 }
 
 table, th, td {
-    border: 1px solid #b9c0cb;
+    border: 1px solid #cccccc;
     border-collapse: collapse;
-    color: #b9c0cb;
+    color: #cccccc;
     margin: auto;
     padding: 8px;
     text-align: left;
@@ -263,7 +263,7 @@ table, th, td {
 
 .project-card-description {
     padding: 10px 2px;
-    color: #b9c0cb;
+    color: #cccccc;
 }
 
 .rss-text-container {
@@ -279,13 +279,13 @@ table, th, td {
 }
 
 p.rss-text {
-    color: #b9c0cb;
+    color: #cccccc;
     text-align: center;
     padding: 0;
 }
 
 .project-header {
-    color: #b9c0cb;
+    color: #cccccc;
     text-align: center;
     width: 100%;
     max-width: 200px;
