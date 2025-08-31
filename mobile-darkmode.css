@@ -1,8 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-color: #121212;
     font-family: "Open Sans", "Arial", "sans-serif";
     color: #ffffff;
     margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
 }
 
 /* unvisited link */
@@ -131,6 +142,13 @@ a.header-title {
 
 .blurb-text-container {
     margin: 10% 25%;
+    background-color: #232323;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.license-text-container {
+    margin: 10% 10%;
     background-color: #232323;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -295,6 +313,10 @@ p.rss-text {
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     margin: 10px;
+}
+
+footer {
+    padding: 10px;
 }
 
 .footer-container {
