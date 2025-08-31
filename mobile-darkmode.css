@@ -296,3 +296,19 @@ p.rss-text {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     margin: 10px;
 }
+
+.footer-container {
+    margin: 10% 0% 0% 0%;
+    background-color: #232323;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+}
+
+.footer-list {
+    list-style-type: none; /* removes bullets */
+    padding: 0;            /* removes default padding */
+    margin: 0;             /* removes default margin */
+    font-size: 12px;
+}
+
