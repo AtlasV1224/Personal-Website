@@ -154,6 +154,14 @@ a.header-title {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.CodeOfConduct-text-container {
+    margin: 10% 10%;
+    background-color: #232323;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 p.blurb-text {
     color: #cccccc;
     text-align: center;
