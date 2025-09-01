@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Reusable Layout</title>
+    <link rel="stylesheet" href="UtilsCSS.css">
+    <style type="text/css">
+        .UploadContainers {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .Upload {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem;
+            background-color: #232323;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+        }
+
+        canvas {
+            margin-top: 20px;
+            background-color: #121212;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="layout">
+        <div id="sidebar"></div>
+        <div id="content">
+            <h2>Colour Palette Replacer</h2>
+            <p>This is the main content area.</p>
+            <p></p>
+
+            <div class="UploadContainers">
+                <div class="Upload">
+                    <h2>Upload palette image</h2>
+                    <input type="file" id="PaletteInput" accept=".png">
+                    <canvas id="PaletteCanvas" width="288" height="288"></canvas>
+                </div>
+                <div class="Upload">
+                    <h2>Upload base image</h2>
+                    <input type="file" id="BaseImageInput" accept=".png">
+                    <canvas id="BaseImageCanvas" width="288" height="288"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+<script type="text/javascript">
+    function loadComponent(id, file) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => document.getElementById(id).innerHTML = data);
+    }
+
+    loadComponent("header", "UtilsHeader.html");
+    loadComponent("sidebar", "UtilsSidebar.html");
+
+    function loadPixelArt(inputId, canvasId) {
+        const input = document.getElementById(inputId);
+        const canvas = document.getElementById(canvasId);
+        const ctx = canvas.getContext('2d');
+
+        input.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (!file) return;
+            if (file.type !== 'image/png') {
+                alert('Please upload a PNG file.');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    const dpr = window.devicePixelRatio || 1;
+
+                    // Set canvas size for high-DPI
+                    canvas.width = 288 * dpr;
+                    canvas.height = 288 * dpr;
+                    canvas.style.width = "288px";
+                    canvas.style.height = "288px";
+
+                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+                    // Disable smoothing for pixel art
+                    ctx.imageSmoothingEnabled = false;
+                    ctx.webkitImageSmoothingEnabled = false;
+                    ctx.mozImageSmoothingEnabled = false;
+                    ctx.msImageSmoothingEnabled = false;
+
+                    // Compute scale to fit inside 288x288 while preserving aspect ratio
+                    const scale = Math.min(288 / img.width, 288 / img.height);
+                    const drawWidth = img.width * scale;
+                    const drawHeight = img.height * scale;
+
+                    // Center the image in the canvas
+                    const offsetX = (288 - drawWidth) / 2;
+                    const offsetY = (288 - drawHeight) / 2;
+
+                    // Clear and draw
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+    }
+
+    loadPixelArt('PaletteInput', 'PaletteCanvas');
+    loadPixelArt('BaseImageInput', 'BaseImageCanvas');
+
+// Parse palette png for colours and add them to a var
+
+
+
+</script>

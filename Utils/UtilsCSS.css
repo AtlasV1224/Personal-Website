@@ -1,0 +1,88 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Sticky Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5rem;          /* define fixed height */
+  background: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+/* Layout wrapper */
+.layout {
+  display: flex;
+  flex: 1; /* fill remaining space below header */
+  
+  margin-top: 3.5rem; /* push down below fixed header */
+}
+
+/* Sticky Sidebar */
+aside {
+  position: sticky;
+  top: 3.5rem;              /* keep aligned under header */
+  height: calc(100vh - 3.5rem);
+  width: 3rem;
+  background: #232323;
+  color: white;
+  padding: .5rem;
+  overflow-y: auto;
+  z-index: 500;             /* ensures it's above content */
+}
+
+/* Main Content */
+#content {
+  flex: 1;
+  padding: 1rem;
+  background: #121212;
+  overflow-y: auto;
+  color: #ccc;
+}
+
+/* Links */
+nav a, aside a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+nav a:hover, aside a:hover {
+  text-decoration: underline;
+}
+
+.SideBar {
+    list-style-type: none;
+    overflow-x: hidden;
+}
+
+ul.HeaderLinks {
+    list-style-type: none; /* remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+ul.HeaderLinks li {
+    display: inline;
+}
+
+.HeaderLinks {
+    font-size: 2rem;
+}
