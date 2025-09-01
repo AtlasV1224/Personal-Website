@@ -12,6 +12,58 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <!--// Add the new slick-theme.css if you want the default styling-->
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <style>
+    .IDCardBioContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .IDCard {
+      margin: 20px;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: #232323;
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+    }
+
+    .IDCardHeader {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .IDCardHeader p {
+      margin: 0px;
+      padding-left: 10px;
+      font-size: 30px;
+    }
+
+    .BrokenImage {
+      align-self: center;
+      height: 150px;
+      width: 150px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      border: 1px solid #cccccc;
+    }
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.Biography {
+  background-color: #232323;
+  border-radius: 20px;
+  padding: 3%;
+  text-align: center;
+  margin: 20px;
+  max-width: 500;
+}
+  </style>
 </head>
 
 <body>
@@ -38,11 +90,30 @@
   </header>
 
   <main>
-    Hey there! I'm Atlas V, a hobbyist programmer, developer, and tinkerer, but I prefer the term generalist as I like to gather skills like a numismatist with coins. I love making a veriety of different projects, from websites to game modifications to hardware projects, with an interest in learning about new technologies and programming languages nothing is off the table.
-    <br><br>
-    Computers aren't my only interest, I also love a veriety of different sciences, including bio sciences, chemistry, and astro sciences! I'm always following the latest news in medical research and space exploration, and with the vast quantity of human knowledge yet to be discovered there's always something new for me to learn.
-    <br><br>
-    The vast majority of my projects are source available and can be found on my <a href="https://github.com/AtlasV1224">GitHub</a> page, a decent amount of them are also Open Source and licensed under the MIT License. 
-
+    <div class="IDCardBioContainer">
+      <div class="IDCard">
+        <div class="IDCardHeader">
+          <img src="images/Personal Logo.png" style="width: 32px; height: 32px;">
+          <p>Atlas V</p>
+        </div>
+        <div class="BrokenImage"><img src="brokenImage.png"></div>
+        <div class="Seperator"><hr></div>
+        <div class="IDCardDetails">Known Languages:<br>• English<br>• Welsh<br><br>Email: AtlasVPersonal@gmail.com</div>
+      </div>
+      <div class="Biography">
+        Hey there! I'm Atlas V, a hobbyist programmer, developer, and tinkerer, but I prefer the term generalist as I
+        like to gather skills like a numismatist with coins. I love making a variety of different projects, from
+        websites to game modifications to hardware projects, with an interest in learning about new technologies and
+        programming languages. Nothing is off the table.
+        <br><br>
+        Computers aren't my only interest, I also love a variety of different sciences, including bio sciences,
+        chemistry, and astro sciences! I'm always following the latest news in medical research and space exploration,
+        and with the vast quantity of human knowledge yet to be discovered there's always something new for me to learn.
+        <br><br>
+        The majority of my projects are source available and can be found on my <a
+          href="https://github.com/AtlasV1224">GitHub</a> page, a decent amount of them are also Open Source and
+        licensed under the MIT License.
+      </div>
+    </div>
   </main>
 </body>
