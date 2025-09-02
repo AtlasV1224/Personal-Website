@@ -1,35 +1,104 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas V</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="../mobile-darkmode.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas V</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="../mobile-darkmode.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .projectItems {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blurb-text {
+      margin-top: 0px;
+    }
+
+    .table-container {
+      background-color: #232323;
+      padding: 20px;
+      border-radius: 10px;
+      width: 750px;
+    }
+
+        .table-container table {
+      width: 100%;
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- Header -->
-    <a href="/" class="header-title"><h1>Atlas V</h1></a>
+  <!-- Header -->
+  <a href="/" class="header-title">
+    <h1>Atlas V</h1>
+  </a>
 
-    <div class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="https://atlasv.info/">Home</a></li>
-          <li><a href="https://atlasv.info/about.html">About</a></li>
-          <li><a href="https://atlasv.info/projects.html">Projects</a></li>
-          <li><a href="https://atlasv.info/education.html">Education</a></li>
-          <li><a href="https://atlasv.info/contact.html">Contact</a></li>
-        </ul>
+  <div class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
-
-    <!--Include this atribution when creating this page so I can use the rss logo on the projects page
-    "<a href="https://www.flaticon.com/free-icons/rss" title="rss icons">Rss icons created by Freepik - Flaticon</a>"-->
+    <ul class="nav-list">
+      <li><a href="https://atlasv.info/">Home</a></li>
+      <li><a href="https://atlasv.info/about.html">About</a></li>
+      <li><a href="https://atlasv.info/projects.html">Projects</a></li>
+      <li><a href="https://atlasv.info/education.html">Education</a></li>
+      <li><a href="https://atlasv.info/contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <main>
+    <div class="blurb-text-container">
+      <div class="projectItems">
+        <h2>Project</h2>
+        <h3>Personal Website</h3>
+        <p class="blurb-text">
+          Originally a personal project, the aim of this website was to provide a couple of basic pages about myself,
+          however as I continued to produce other projects, I decided to repurpose and expand the website to act as a
+          central hub.
+          <br><br>
+          Along side external projects that I've made, the table below features the utilities hosted on this website
+          that I created for personal use and have grown into something that others may find a use for.
+          <br>
+          These utilities are slowly being converted from python into javascript so that they can be run locally in the
+          browser, meaning there will be no need for any installation and nothing will be sent to a server.
+          <br>
+          No personal data is collected when you use the utilities on this website, I dislike it, there's a good chance
+          you dislike it too, and it's a lot more effort on my part to collect it.
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="table-container">
+      <table border="1">
+        <colgroup>
+          <col style="width: 25%;">
+          <col style="width: 75%;">
+        </colgroup>
+        <tr>
+          <td>Colour Palette Replacer (WIP)</td>
+          <td>Replaces specific colours on an image based on a user provided palette</td>
+        </tr>
+        <tr>
+          <td>Content Pack Creator (Depreciated)</td>
+          <td>Creates the base files for various content packs (Use 
+      <a href="https://atlasv.info/projects/SDVDeployAndPack.html">Stardew Valley: Deploy and Pack</a> VSCode extension instead)</td>
+        </tr>
+      </table>
+    </div>
+  </main>
 
 </body>
